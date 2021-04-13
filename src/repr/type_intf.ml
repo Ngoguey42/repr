@@ -482,6 +482,8 @@ module type DSL = sig
   (** [decode_json t e] decodes values of type [t] from the
       {{:http://erratique.ch/software/jsonm} jsonm} decoder [e]. *)
 
+  val decode_json_bis : 'a t -> Json.decoder -> ('a, [ `Msg of string ]) result
+
   val decode_json_lexemes :
     'a t -> Jsonm.lexeme list -> ('a, [ `Msg of string ]) result
   (** [decode_json_lexemes] is similar to {!decode_json} but uses an already

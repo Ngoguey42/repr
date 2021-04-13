@@ -358,8 +358,9 @@ let ( to_json_string,
       pp_json,
       encode_json,
       decode_json,
+      decode_json_bis,
       decode_json_lexemes ) =
-  Type_json.(to_string, of_string, pp, encode, decode_jsonm, decode_lexemes)
+  Type_json.(to_string, of_string, pp, encode, decode_jsonm, decode, decode_lexemes)
 
 let encode_bin, decode_bin, to_bin_string, of_bin_string =
   Type_binary.(encode_bin, decode_bin, to_bin_string, of_bin_string)
